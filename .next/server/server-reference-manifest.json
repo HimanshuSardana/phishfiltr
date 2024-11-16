@@ -1,0 +1,22 @@
+{
+  "node": {
+    "befc29f383c80c6a3a6a76e8e192b8eaf32d5196": {
+      "workers": {
+        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fhimanshu%2Fprojects%2Fphishfiltr-web%2Factions%2Flogin.ts%22%2C%5B%22default%22%5D%5D%2C%5B%22%2Fhome%2Fhimanshu%2Fprojects%2Fphishfiltr-web%2Factions%2Foauth.ts%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/login/page": "action-browser"
+      }
+    },
+    "7d8995957b1c1c6053fcaae955635d7f91ed63df": {
+      "workers": {
+        "app/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fhimanshu%2Fprojects%2Fphishfiltr-web%2Factions%2Flogin.ts%22%2C%5B%22default%22%5D%5D%2C%5B%22%2Fhome%2Fhimanshu%2Fprojects%2Fphishfiltr-web%2Factions%2Foauth.ts%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/login/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "cDyJRixHRtcARtyqcO2W5m3JEa40wHjjIbrtE4BBkaw="
+}
