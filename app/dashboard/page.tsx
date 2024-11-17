@@ -55,7 +55,7 @@ export default function DashboardPage() {
                                                                 <FloatingLabelInput name="from" label="From" className="xs:w-full md:w-1/2 " required type="email" />
                                                                 <FloatingLabelInput name="subject" label="Subject" className="xs:w-full md:w-1/2 " required />
                                                                 <FloatingLabelInput label="User Email" className="hidden" hidden name="userEmail" value={user?.email} />
-                                                                <FloatingLabelTextarea name="emailBody" label="Email Body" rows={10} className="xs:w-full md:w-1/2" required />
+                                                                <FloatingLabelTextarea name="emailBody" label="Email Body" rows={20} className="xs:w-full md:w-1/2" required />
                                                         </div>
                                                         <LoadingButton loading={isPending} type="submit" className="mt-5 xs:w-full md:w-1/2 font-bold">Analyze</LoadingButton>
                                                 </form>

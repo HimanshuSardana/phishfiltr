@@ -606,13 +606,6 @@ video {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
 }
-.pattern-isometric {
-  opacity: var(--pattern-opacity, 0.4);
-  background-color: var(--pattern-bg-color, transparent);
-  background-image: linear-gradient(30deg, var(--pattern-color) 12%, transparent 12.5%, transparent 87%, var(--pattern-color) 87.5%, var(--pattern-color)), linear-gradient(150deg, var(--pattern-color) 12%, transparent 12.5%, transparent 87%, var(--pattern-color) 87.5%, var(--pattern-color)), linear-gradient(30deg, var(--pattern-color) 12%, transparent 12.5%, transparent 87%, var(--pattern-color) 87.5%, var(--pattern-color)), linear-gradient(150deg, var(--pattern-color) 12%, transparent 12.5%, transparent 87%, var(--pattern-color) 87.5%, var(--pattern-color)), linear-gradient(60deg, var(--pattern-color-77) 25%, transparent 25.5%, transparent 75%, var(--pattern-color-77) 75%, var(--pattern-color-77)), linear-gradient(60deg, var(--pattern-color-77) 25%, transparent 25.5%, transparent 75%, var(--pattern-color-77) 75%, var(--pattern-color-77));
-  background-size: var(--pattern-size, 40px) calc(var(--pattern-size, 40px) * 1.75);
-  background-position: 0 0, 0 0, var(--pattern-size-half, 20px) calc(var(--pattern-size, 40px) * 0.875), var(--pattern-size-half, 20px) calc(var(--pattern-size, 40px) * 0.875), 0 0, var(--pattern-size-half, 20px) calc(var(--pattern-size, 40px) * 0.875);
-}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1554,17 +1547,6 @@ video {
 }
 .ease-linear {
   animation-timing-function: linear;
-}
-.pattern-bg-transparent {
-  --pattern-bg-color: transparent;
-}
-.pattern-blue-500 {
-  --pattern-color: #3b82f6;
-  --pattern-color-55: #3b82f655;
-  --pattern-color-77: #3b82f677;
-}
-.pattern-opacity-10 {
-  --pattern-opacity: .10;
 }
 
 body {

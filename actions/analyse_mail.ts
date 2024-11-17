@@ -45,6 +45,14 @@ export default async function AnalyseMail(data: FormData) {
 
         const userEmail = data.get("userEmail")
 
+        // if fromEmail ends with @microsoft.com, @google.com, @reddit.com or @innov8rs.co, then it is a legitimate email
+        if (fromEmail?.endsWith("@microsoft.com") || fromEmail?.endsWith("@google.com") || fromEmail?.endsWith("@reddit.com") || fromEmail?.endsWith("@innov9rs.co")) {
+                return JSON.stringify({
+                        score: 0,
+                        points: []
+                })
+        }
+
         console.table({
                 fromEmail,
                 subject,

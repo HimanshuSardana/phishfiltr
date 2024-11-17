@@ -15,8 +15,40 @@
       "layer": {
         "app/login/page": "action-browser"
       }
+    },
+    "c44ce53bb333d2c983f48cd73447ec0fd246c43b": {
+      "workers": {
+        "app/dashboard/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fhimanshu%2Fprojects%2Fphishfiltr-web%2Factions%2Fanalyse_mail.ts%22%2C%5B%22default%22%5D%5D%2C%5B%22%2Fhome%2Fhimanshu%2Fprojects%2Fphishfiltr-web%2Factions%2Flogout.ts%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/dashboard/page": "action-browser"
+      }
+    },
+    "07aa3345f1f8d540807f22bc8b0e974bbbac8375": {
+      "workers": {
+        "app/dashboard/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fhimanshu%2Fprojects%2Fphishfiltr-web%2Factions%2Fanalyse_mail.ts%22%2C%5B%22default%22%5D%5D%2C%5B%22%2Fhome%2Fhimanshu%2Fprojects%2Fphishfiltr-web%2Factions%2Flogout.ts%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/dashboard/page": "action-browser"
+      }
+    },
+    "9a89908eb57b74d417614eb2c2e13bc2a50a9e3f": {
+      "workers": {
+        "app/dashboard/breach-checker/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fhimanshu%2Fprojects%2Fphishfiltr-web%2Factions%2Fbreach_check.ts%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/dashboard/breach-checker/page": "action-browser"
+      }
+    },
+    "3bf645f6b1b42c0eb59dcac17fede9285364f776": {
+      "workers": {
+        "app/(auth)/register/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fhimanshu%2Fprojects%2Fphishfiltr-web%2Factions%2Fregister.ts%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(auth)/register/page": "action-browser"
+      }
     }
   },
   "edge": {},
-  "encryptionKey": "cDyJRixHRtcARtyqcO2W5m3JEa40wHjjIbrtE4BBkaw="
+  "encryptionKey": "zLomuv9dC6MmQHxQbLwF+YDfYEmHo2E8toGt+jEL6xc="
 }

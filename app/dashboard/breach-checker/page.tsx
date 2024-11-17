@@ -19,6 +19,10 @@ export default function BreachCheckerPage() {
                         setBreached(true)
                         setBreaches(result.sources)
                 }
+                if (!result.success) {
+                        setBreached(true)
+                        setBreaches([])
+                }
         }
 
         return (
@@ -36,7 +40,7 @@ export default function BreachCheckerPage() {
 
                                 {breaches && (
                                         <div className="xs:px-5 mx-auto xs:w-full md:w-1/2 mt-5">
-                                                <h3 className="font-bold text-xl">Your account appeared in {breaches.length} breaches</h3>
+                                                {breaches?.length > 0 && <h3 className="font-bold text-xl">Your account appeared in {breaches.length} breaches</h3>}
                                                 <div className="flex flex-col flex-wrap">
                                                         {breaches.map((breach, index) => {
                                                                 return (
@@ -48,6 +52,9 @@ export default function BreachCheckerPage() {
                                                                         </div>
                                                                 )
                                                         })}
+                                                        {breaches.length == 0 && (
+                                                                <h3 className="text-xl font-bold">Congratulations! You're <span className="text-xl font-bold text-primary">safe</span></h3>
+                                                        )}
                                                 </div>
                                         </div>
                                 )}

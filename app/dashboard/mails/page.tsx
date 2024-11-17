@@ -20,8 +20,6 @@ export default function SecurityPage() {
         useEffect(() => {
                 async function fetchMails() {
                         const supabase = await createClient()
-
-                        // get all records from the 'mails' table where the email column is equal to the user's email
                         const { data, error } = await supabase.from('mails').select('*')
                         console.log("Ran fetchMails")
                         setMails(data)
@@ -34,9 +32,6 @@ export default function SecurityPage() {
 
         return (
                 <div className="content ml-5 pr-[5%] mt-5">
-                        {mails.length == 0 && (
-                                <div className='w-full h-full flex justify-center items-center'><Loader2 size="70" className='animate-spin text-primary' /></div>
-                        )}
                         {mails && (
                                 <>
                                         {/*
@@ -45,9 +40,9 @@ export default function SecurityPage() {
                                         ))}
                                         */}
 
-                                        <Table>
+                                        <Table className="border border-1">
                                                 <TableHeader>
-                                                        <TableRow>
+                                                        <TableRow className="border border-1">
                                                                 <TableHead>From</TableHead>
                                                                 <TableHead>Subject</TableHead>
                                                                 <TableHead>Body</TableHead>
@@ -70,6 +65,10 @@ export default function SecurityPage() {
                                         </Table>
                                 </>
                         )}
+                        {mails.length == 0 && (
+                                <div className='w-full h-full flex mt-5 justify-center items-center'><Loader2 size="30" className='animate-spin text-muted-foreground' /></div>
+                        )}
+
                 </div>
         )
 }
